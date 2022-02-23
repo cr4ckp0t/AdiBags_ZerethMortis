@@ -29,7 +29,31 @@ shardFilter.uiDesc = L["Items relating to Zereth Mortis and patch 9.2."]
 
 function shardFilter:OnInitialize()
     self.zerethMortis = {
-       
+        -- Crafting Materials
+        [187703] = true, -- Silken Protofiber
+        [187704] = true, -- Protoflesh
+		
+        -- Cosmetic Transmog
+        [190637] = true, -- Percussive Maintenance Instrument
+
+        -- Keys & Key Fragments
+        [189863] = true, -- Spatial Opener
+		
+		-- Lore
+		[187810] = true, -- Cypher Lore Codex
+		
+		-- Toys
+		[190754] = true, -- Firim's Specimen Container
+		
+		-- Tales of the Exile Scrolls
+		[189575] = true, -- Firim in Exile, Part 1
+		[189576] = true, -- Firim in Exile, Part 2
+		[189578] = true, -- Firim in Exile, Part 3
+		[189579] = true, -- Firim in Exile, Part 4
+		[189580] = true, -- Firim in Exile, Part 5
+		[189581] = true, -- Firim in Exile, Part 6
+		[189582] = true, -- Firim in Exile, Part 7
+		[189753] = true, -- Firim in Exile, Epilogue
     }
 end
 
