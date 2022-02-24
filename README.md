@@ -20,6 +20,7 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 
 ### Keys & Key Fragments
 
+* [Sandworm Chest Key Fragment](https://wowhead.com/item=190198)
 * [Spatial Opener](https://wowhead.com/item=189863)
 
 ### Lore

@@ -42,6 +42,7 @@ function shardFilter:OnInitialize()
         [190638] = true, -- Tormented Mawsteel Greatsword
 
         -- Keys & Key Fragments
+        [190198] = true, -- Sandworm Chest Key Fragment
         [189863] = true, -- Spatial Opener
         
         -- Lore
