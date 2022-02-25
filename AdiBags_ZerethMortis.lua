@@ -33,6 +33,7 @@ function shardFilter:OnInitialize()
 
         -- Crafting Materials
         [187703] = true, -- Silken Protofiber
+		[187707] = true, -- Progenitor Essentia
         [187704] = true, -- Protoflesh
         
         -- Cosmetic Transmog
@@ -50,9 +51,12 @@ function shardFilter:OnInitialize()
         
         -- Miscellaneous
         [190339] = true, -- Enlightened Offering
+		[187841] = true, -- Explosive Core
         [190953] = true, -- Protofruit Flesh
+		[190739] = true, -- Provis Wax
         [187662] = true, -- Strange Goop
         [190189] = true, -- Sandworm Relic
+        [190941] = true, -- Teachings of the Elders
 
         -- Pocopoc Attire
         [190061] = true, -- Admiral Pocopoc

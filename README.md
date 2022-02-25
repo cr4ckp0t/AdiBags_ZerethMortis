@@ -2,6 +2,8 @@
 
 Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2.
 
+*If you would like to see an item added, please let me know [here](https://github.com/cr4ckp0t/AdiBags_ZerethMortis/issues).*
+
 [https://www.curseforge.com/wow/addons/adibags-zereth-mortis](https://www.curseforge.com/wow/addons/adibags-zereth-mortis)
 
 ## Items Filtered
@@ -9,6 +11,7 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 ### Crafting Materials
 
 * [Silken Protofiber](https://wowhead.com/item=187703)
+* [Progenitor Essentia](https://wowhead.com/item=187707)
 * [Protoflesh](https://wowhead.com/item=187704)
 
 ### Cosmetic Transmog
@@ -30,9 +33,12 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 ### Miscellaneous
 
 * [Enlightened Offering](https://wowhead.com/item=190339)
+* [Explosive Core](https://wowhead.com/item=187841)
 * [Protofruit Flesh](https://wowhead.com/item=190953)
+* [Provis Wax](https://wowhead.com/item=190739)
 * [Strange Goop](https://wowhead.com/item=187662)
 * [Sandworm Relic](https://wowhead.com/item=190189)
+* [Teachings of the Elders](https://wowhead.com/item=190941)
 
 ### Pocopoc Attire
 
