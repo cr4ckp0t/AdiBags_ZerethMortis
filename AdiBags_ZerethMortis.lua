@@ -9,6 +9,119 @@ local tonumber = _G["tonumber"]
 
 local L = addon.L
 local tooltip
+local filterList = {}
+
+-- From: https://www.wowhead.com/guides/rare-spawn-treasure-locations-loot-zereth-mortis
+local crafting = {
+    187703, -- Silken Protofiber
+    187707, -- Progenitor Essentia
+    187704, -- Protoflesh
+	187893, -- Volatile Precursor
+}
+
+local cosmetic = {
+    190637, -- Percussive Maintenance Instrument
+    190952, -- Protoflora Harvester
+    190942, -- Protomineral Extractor
+    190638, -- Tormented Mawsteel Greatsword
+}
+
+local keys = {
+    190198, -- Sandworm Chest Key Fragment
+    189863, -- Spatial Opener
+}
+
+local lore = {
+    187810, -- Cypher Lore Codex
+}
+
+local miscellaneous = {
+    190339, -- Enlightened Offering
+    187841, -- Explosive Core
+    190953, -- Protofruit Flesh
+    190739, -- Provis Wax
+    187662, -- Strange Goop
+    190189, -- Sandworm Relic
+    190941, -- Teachings of the Elders
+}
+
+local pocopoc = {
+    190061, -- Admiral Pocopoc
+    190060, -- Adventurous Pocopoc
+    189451, -- Chef Pocopoc
+    187833, -- Dapper Pocopoc
+    190058, -- Peaceful Pocopoc
+    190059, -- Pirate Pocopoc
+    190098, -- Pepepec
+}
+
+local protoform = {
+    187634, -- Ambystan Lattice
+    187633, -- Bufonid Lattice
+    187635, -- Cervid Lattice
+    189146, -- Geomental Lattice
+    189159, -- Glimmer of Discovery
+    189145, -- Helicid Lattice
+    190388, -- Lupine Lattice
+    189176, -- Protoform Sentience Crown
+    189150, -- Raptora Lattice
+    189177, -- Revelation Key
+    189151, -- Scarabid Lattice
+    189152, -- Tarachnid Lattice
+    189153, -- Unformed Lattice
+    189154, -- Vespoid Lattice
+    189155, -- Viperid Lattice
+    189156, -- Vombata Lattice
+}
+
+local schematics = {
+    189478, -- Schematic: Adorned Vombata
+    189435, -- Schematic: Multichicken
+    189469, -- Schematic: Prototype Leaper
+    189456, -- Schematic: Sundered Zerethsteed
+    189447, -- Schematic: Viperid Menace
+}
+
+local toys = {
+    190853, -- Bushel of Mysterious Fruit
+    190754, -- Firim's Specimen Container
+    190926, -- Infested Automa Core
+    190457, -- Protopological Cube
+}
+
+local exile = {
+    189575, -- Firim in Exile, Part 1
+    189576, -- Firim in Exile, Part 2
+    189578, -- Firim in Exile, Part 3
+    189579, -- Firim in Exile, Part 4
+    189580, -- Firim in Exile, Part 5
+    189581, -- Firim in Exile, Part 6
+    189582, -- Firim in Exile, Part 7
+    189753, -- Firim in Exile, Epilogue
+}
+
+local function addToFilter(set, list)
+    for _, v in ipairs(list) do
+        set[v] = true
+    end
+end
+
+local function filterItemsInit(self)
+    local items = {}
+
+    if self.db.profile.filterCrafting then addToFilter(items, crafting) end
+    if self.db.profile.filterCosmetic then addToFilter(items, cosmetic) end
+    if self.db.profile.filterExile then addToFilter(items, exile) end
+    if self.db.profile.filterKeys then addToFilter(items, keys) end
+    if self.db.profile.filterLore then addToFilter(items, lore) end
+    if self.db.profile.filterMisc then addToFilter(items, miscellaneous) end
+    if self.db.profile.filterPocopoc then addToFilter(items, pocopoc) end
+    if self.db.profile.filterProtoform then addToFilter(items, protoform) end
+    if self.db.profile.filterSchematics then addToFilter(items, schematics) end
+    if self.db.profile.filterToys then addToFilter(items, toys) end
+
+    return items
+end
 
 local function tooltipInit()
     local tip, leftside = CreateFrame("GameTooltip"), {}
@@ -28,89 +141,24 @@ shardFilter.uiName = L["Zereth Mortis"]
 shardFilter.uiDesc = L["Items relating to Zereth Mortis and patch 9.2."]
 
 function shardFilter:OnInitialize()
-    self.zerethMortis = {
-        -- From: https://www.wowhead.com/guides/rare-spawn-treasure-locations-loot-zereth-mortis
-
-        -- Crafting Materials
-        [187703] = true, -- Silken Protofiber
-		[187707] = true, -- Progenitor Essentia
-        [187704] = true, -- Protoflesh
-        
-        -- Cosmetic Transmog
-        [190637] = true, -- Percussive Maintenance Instrument
-        [190952] = true, -- Protoflora Harvester
-        [190942] = true, -- Protomineral Extractor
-        [190638] = true, -- Tormented Mawsteel Greatsword
-
-        -- Keys & Key Fragments
-        [190198] = true, -- Sandworm Chest Key Fragment
-        [189863] = true, -- Spatial Opener
-        
-        -- Lore
-        [187810] = true, -- Cypher Lore Codex
-        
-        -- Miscellaneous
-        [190339] = true, -- Enlightened Offering
-		[187841] = true, -- Explosive Core
-        [190953] = true, -- Protofruit Flesh
-		[190739] = true, -- Provis Wax
-        [187662] = true, -- Strange Goop
-        [190189] = true, -- Sandworm Relic
-        [190941] = true, -- Teachings of the Elders
-
-        -- Pocopoc Attire
-        [190061] = true, -- Admiral Pocopoc
-        [190060] = true, -- Adventurous Pocopoc
-        [189451] = true, -- Chef Pocopoc
-        [187833] = true, -- Dapper Pocopoc
-        [190058] = true, -- Peaceful Pocopoc
-        [190059] = true, -- Pirate Pocopoc
-        [190098] = true, -- Pepepec
-
-        -- Protoform Synthesis
-        [187634] = true, -- Ambystan Lattice
-        [187633] = true, -- Bufonid Lattice
-        [187635] = true, -- Cervid Lattice
-        [189146] = true, -- Geomental Lattice
-        [189159] = true, -- Glimmer of Discovery
-        [189145] = true, -- Helicid Lattice
-        [190388] = true, -- Lupine Lattice
-        [189176] = true, -- Protoform Sentience Crown
-        [189150] = true, -- Raptora Lattice
-        [189177] = true, -- Revelation Key
-        [189151] = true, -- Scarabid Lattice
-        [189152] = true, -- Tarachnid Lattice
-        [189153] = true, -- Unformed Lattice
-        [189154] = true, -- Vespoid Lattice
-        [189155] = true, -- Viperid Lattice
-        [189156] = true, -- Vombata Lattice
-
-        -- Schematics
-        [189478] = true, -- Schematic: Adorned Vombata
-        [189435] = true, -- Schematic: Multichicken
-        [189469] = true, -- Schematic: Prototype Leaper
-        [189456] = true, -- Schematic: Sundered Zerethsteed
-        [189447] = true, -- Schematic: Viperid Menace
-
-        -- Toys
-        [190853] = true, -- Bushel of Mysterious Fruit
-        [190754] = true, -- Firim's Specimen Container
-        [190926] = true, -- Infested Automa Core
-        [190457] = true, -- Protopological Cube
-        
-        -- Tales of the Exile Scrolls
-        [189575] = true, -- Firim in Exile, Part 1
-        [189576] = true, -- Firim in Exile, Part 2
-        [189578] = true, -- Firim in Exile, Part 3
-        [189579] = true, -- Firim in Exile, Part 4
-        [189580] = true, -- Firim in Exile, Part 5
-        [189581] = true, -- Firim in Exile, Part 6
-        [189582] = true, -- Firim in Exile, Part 7
-        [189753] = true, -- Firim in Exile, Epilogue
-    }
+    self.db = AdiBags.db:RegisterNamespace("Zereth Mortis", {
+        profile = {
+            filterCrafting = true,
+            filterCosmetic = true,
+            filterExile = true,
+            filterKeys = true,
+            filterLore = true,
+            filterMisc = true,
+            filterPocopoc = true,
+            filterProtoform = true,
+            filterSchematics = true,
+            filterToys = true,
+        }
+    })
 end
 
-function shardFilter:Updatee()
+function shardFilter:Update()
+    filterItems = nil
     self:SendMessage("AdiBags_FiltersChanged")
 end
 
@@ -123,7 +171,8 @@ function shardFilter:OnDisable()
 end
 
 function shardFilter:Filter(slotData)
-    if self.zerethMortis[tonumber(slotData.itemId)] then
+    filterItems = filterItems or filterItemsInit(self)
+    if filterItems[tonumber(slotData.itemId)] then
         return L["Zereth Mortis"]
     end
 
@@ -138,4 +187,60 @@ function shardFilter:Filter(slotData)
     end
 
     tooltip:Hide()
+end
+
+function shardFilter:GetOptions()
+    return {
+        filterCrafting = {
+            name = L["Crafting Materials"],
+            type = "toggle",
+            order = 10,
+        },
+        filterCosmetic = {
+            name = L["Cosmetic Items"],
+            type = "toggle",
+            order = 20,
+        },
+        filterKeys = {
+            name = L["Keys & Key Fragments"],
+            type = "toggle",
+            order = 30,
+        },
+        filterLore = {
+            name = L["Lore Items"],
+            type = "toggle",
+            order = 40,
+        },
+        filterMisc = {
+            name = L["Miscellaneous"],
+            type = "toggle",
+            order = 50,
+        },
+        filterPocopoc = {
+            name = L["Pocopoc Costumes"],
+            type = "toggle",
+            order = 60
+        },
+        filterProtoform = {
+            name = L["Protoform Synthesis"],
+            type = "toggle",
+            order = 70,
+        },
+        filterSchematics = {
+            name = L["Schematics"],
+            type = "toggle",
+            order = 80,
+        },
+        filterToys = {
+            name = L["Toys"],
+            type = "toggle",
+            order = 90,
+        },
+        filterExile = {
+            name = L["Tales of the Exile"],
+            type = "toggle",
+            order = 100,
+        },
+    },
+    AdiBags:GetOptionHandler(self, false, function() return self:Update() end)
 end

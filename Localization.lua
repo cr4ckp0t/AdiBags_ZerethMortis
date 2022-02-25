@@ -22,8 +22,18 @@ local locale = GetLocale()
 if locale == "deDE" then
 	--Translation missing
 elseif locale == "enUS" then
-	L["Zereth Mortis"] = true
+	L["Cosmetic Items"] = true
+	L["Crafting Materials"] = true
 	L["Items relating to Zereth Mortis and patch 9.2."] = true
+	L["Keys & Key Fragments"] = true
+	L["Lore Items"] = true
+	L["Miscellaneous"] = true
+	L["Pocopoc Costumes"] = true
+	L["Protoform Synthesis"] = true
+	L["Schematics"] = true
+	L["Tales of the Exile"] = true
+	L["Toys"] = true
+	L["Zereth Mortis"] = true
 elseif locale == "esES" then
 	--Translation missing
 elseif locale == "esMX" then
