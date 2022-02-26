@@ -12,13 +12,17 @@ local tooltip
 local filterList = {}
 
 -- From: https://www.wowhead.com/guides/rare-spawn-treasure-locations-loot-zereth-mortis
+
+-- Crafting Items
 local crafting = {
+    187728, -- Ephemera Strand
     187703, -- Silken Protofiber
     187707, -- Progenitor Essentia
     187704, -- Protoflesh
 	187893, -- Volatile Precursor
 }
 
+-- Cosmetic Items
 local cosmetic = {
     190637, -- Percussive Maintenance Instrument
     190952, -- Protoflora Harvester
@@ -26,15 +30,27 @@ local cosmetic = {
     190638, -- Tormented Mawsteel Greatsword
 }
 
+-- Deepstar Polyp Items
+local deepstar = {
+    187923, -- Aurelid Lure
+    187916, -- Coilclutch Vine
+    187676, -- Deepstar Polyp
+    187922, -- Flipper Fish
+    187915, -- Pungent Blobfish
+}
+
+-- Keys & Key Fragments
 local keys = {
     190198, -- Sandworm Chest Key Fragment
     189863, -- Spatial Opener
 }
 
+-- Lore Items
 local lore = {
     187810, -- Cypher Lore Codex
 }
 
+-- Miscellaneous Items
 local miscellaneous = {
     190339, -- Enlightened Offering
     187841, -- Explosive Core
@@ -45,6 +61,7 @@ local miscellaneous = {
     190941, -- Teachings of the Elders
 }
 
+-- Pocopoc Cosmetic Items
 local pocopoc = {
     190061, -- Admiral Pocopoc
     190060, -- Adventurous Pocopoc
@@ -55,6 +72,7 @@ local pocopoc = {
     190098, -- Pepepec
 }
 
+-- Protoform Synthesis
 local protoform = {
     187634, -- Ambystan Lattice
     187633, -- Bufonid Lattice
@@ -74,6 +92,7 @@ local protoform = {
     189156, -- Vombata Lattice
 }
 
+-- Schematics
 local schematics = {
     189478, -- Schematic: Adorned Vombata
     189435, -- Schematic: Multichicken
@@ -82,6 +101,7 @@ local schematics = {
     189447, -- Schematic: Viperid Menace
 }
 
+-- Toys
 local toys = {
     190853, -- Bushel of Mysterious Fruit
     190754, -- Firim's Specimen Container
@@ -89,6 +109,7 @@ local toys = {
     190457, -- Protopological Cube
 }
 
+-- Tales of the Exiled
 local exile = {
     189575, -- Firim in Exile, Part 1
     189576, -- Firim in Exile, Part 2
@@ -111,6 +132,7 @@ local function filterItemsInit(self)
 
     if self.db.profile.filterCrafting then addToFilter(items, crafting) end
     if self.db.profile.filterCosmetic then addToFilter(items, cosmetic) end
+    if self.db.profile.filterDeepstar then addToFilter(items, deepstar) end
     if self.db.profile.filterExile then addToFilter(items, exile) end
     if self.db.profile.filterKeys then addToFilter(items, keys) end
     if self.db.profile.filterLore then addToFilter(items, lore) end
@@ -145,6 +167,7 @@ function shardFilter:OnInitialize()
         profile = {
             filterCrafting = true,
             filterCosmetic = true,
+            filterDeepstar = true,
             filterExile = true,
             filterKeys = true,
             filterLore = true,
@@ -193,53 +216,63 @@ function shardFilter:GetOptions()
     return {
         filterCrafting = {
             name = L["Crafting Materials"],
+            desc = L["Items used in crafting new items added in 9.2."],
             type = "toggle",
             order = 10,
         },
         filterCosmetic = {
             name = L["Cosmetic Items"],
+            desc = L["Cosmetic (Transmogrification) items added in 9.2."],
             type = "toggle",
             order = 20,
         },
-        filterKeys = {
-            name = L["Keys & Key Fragments"],
+        filterDeepstar = {
+            name = L["Deepstar Polyp Items"],
+            desc = L["Items required to craft the lure to get the Deepstar Polyp mount."],
             type = "toggle",
             order = 30,
+        },
+        filterKeys = {
+            name = L["Keys & Key Fragments"],
+            desc = L["Keys and key fragments added in 9.2."],
+            type = "toggle",
+            order = 40,
         },
         filterLore = {
             name = L["Lore Items"],
             type = "toggle",
-            order = 40,
+            order = 50,
         },
         filterMisc = {
             name = L["Miscellaneous"],
             type = "toggle",
-            order = 50,
+            order = 60,
         },
         filterPocopoc = {
             name = L["Pocopoc Costumes"],
             type = "toggle",
-            order = 60
+            order = 70,
         },
         filterProtoform = {
             name = L["Protoform Synthesis"],
             type = "toggle",
-            order = 70,
+            order = 80,
         },
         filterSchematics = {
             name = L["Schematics"],
             type = "toggle",
-            order = 80,
+            order = 90,
         },
         filterToys = {
             name = L["Toys"],
             type = "toggle",
-            order = 90,
+            order = 100,
         },
         filterExile = {
             name = L["Tales of the Exile"],
+            desc = L["Items required for the Tales of the Exile achievement."],
             type = "toggle",
-            order = 100,
+            order = 110,
         },
     },
     AdiBags:GetOptionHandler(self, false, function() return self:Update() end)

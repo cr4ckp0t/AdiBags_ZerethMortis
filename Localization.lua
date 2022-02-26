@@ -22,10 +22,16 @@ local locale = GetLocale()
 if locale == "deDE" then
 	--Translation missing
 elseif locale == "enUS" then
+	L["Cosmetic (Transmogrification) items added in 9.2."] = true
 	L["Cosmetic Items"] = true
 	L["Crafting Materials"] = true
+	L["Deepstar Polyp Items"] = true
 	L["Items relating to Zereth Mortis and patch 9.2."] = true
+	L["Items required for the Tales of the Exile achievement."] = true
+	L["Items required to craft the lure to get the Deepstar Polyp mount."] = true
+	L["Items used in crafting new items added in 9.2."] = true
 	L["Keys & Key Fragments"] = true
+	L["Keys and key fragments added in 9.2."] = true
 	L["Lore Items"] = true
 	L["Miscellaneous"] = true
 	L["Pocopoc Costumes"] = true
@@ -34,6 +40,7 @@ elseif locale == "enUS" then
 	L["Tales of the Exile"] = true
 	L["Toys"] = true
 	L["Zereth Mortis"] = true
+	
 elseif locale == "esES" then
 	--Translation missing
 elseif locale == "esMX" then

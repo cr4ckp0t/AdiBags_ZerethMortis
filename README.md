@@ -10,9 +10,11 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 
 ### Crafting Materials
 
+* [Ephemera Strand](https://www.wowhead.com/item=187728)
 * [Silken Protofiber](https://wowhead.com/item=187703)
 * [Progenitor Essentia](https://wowhead.com/item=187707)
 * [Protoflesh](https://wowhead.com/item=187704)
+* [Volatile Precursor](https://wowhead.com/item=187893)
 
 ### Cosmetic Transmog
 
@@ -20,6 +22,14 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 * [Protoflora Harvester](https://wowhead.com/item=190952)
 * [Protomineral Extractor](https://wowhead.com/item=190942)
 * [Tormented Mawsteel Greatsword](https://wowhead.com/item=190638)
+
+### [Deepstar Polyp](https://www.wowhead.com/item=187676/deepstar-polyp) Items
+
+* [Aurelid Lure](https://wowhead.com/item=187923)
+* [Coilclutch Vine](https://wowhead.com/item=187916)
+* [Deepstar Polyp](https://wowhead.com/item=187676)
+* [Flipper Fish](https://wowhead.com/item=187922)
+* [Pungent Blobfish](https://wowhead.com/item=187915)
 
 ### Keys & Key Fragments
 
