@@ -23,7 +23,7 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 * [Protomineral Extractor](https://wowhead.com/item=190942)
 * [Tormented Mawsteel Greatsword](https://wowhead.com/item=190638)
 
-### [Deepstar Polyp](https://www.wowhead.com/item=187676/deepstar-polyp) Items
+### Deepstar Polyp Items
 
 * [Aurelid Lure](https://wowhead.com/item=187923)
 * [Coilclutch Vine](https://wowhead.com/item=187916)
@@ -66,6 +66,7 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 * [Bufonid Lattice](https://wowhead.com/item=187633)
 * [Cervid Lattice](https://wowhead.com/item=187635)
 * [Geomental Lattice](https://wowhead.com/item=189146)
+* [Genesis Mote](https://wowhead.com/item=188957)
 * [Glimmer of Discovery](https://wowhead.com/item=189159)
 * [Helicid Lattice](https://wowhead.com/item=189145)
 * [Lupine Lattice](https://wowhead.com/item=190388)

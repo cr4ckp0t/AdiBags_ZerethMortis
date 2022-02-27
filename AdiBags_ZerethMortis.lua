@@ -15,7 +15,6 @@ local filterList = {}
 
 -- Crafting Items
 local crafting = {
-    187728, -- Ephemera Strand
     187703, -- Silken Protofiber
     187707, -- Progenitor Essentia
     187704, -- Protoflesh
@@ -53,6 +52,8 @@ local lore = {
 -- Miscellaneous Items
 local miscellaneous = {
     190339, -- Enlightened Offering
+    187787, -- Ephemera Orb
+    187728, -- Ephemera Strand
     187841, -- Explosive Core
     190953, -- Protofruit Flesh
     190739, -- Provis Wax
@@ -78,6 +79,7 @@ local protoform = {
     187633, -- Bufonid Lattice
     187635, -- Cervid Lattice
     189146, -- Geomental Lattice
+    188957, -- Genesis Mote
     189159, -- Glimmer of Discovery
     189145, -- Helicid Lattice
     190388, -- Lupine Lattice
