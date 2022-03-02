@@ -51,6 +51,7 @@ local lore = {
 
 -- Miscellaneous Items
 local miscellaneous = {
+    190740, -- Automa Integration
     190339, -- Enlightened Offering
     187787, -- Ephemera Orb
     187728, -- Ephemera Strand
@@ -81,6 +82,7 @@ local protoform = {
     189146, -- Geomental Lattice
     188957, -- Genesis Mote
     189159, -- Glimmer of Discovery
+	189164, -- Glimmer of Multiplicity
     189145, -- Helicid Lattice
     190388, -- Lupine Lattice
     189176, -- Protoform Sentience Crown

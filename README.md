@@ -42,6 +42,7 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 
 ### Miscellaneous
 
+* [Automa Integration](https://wowhead.com/item=190740)
 * [Enlightened Offering](https://wowhead.com/item=190339)
 * [Explosive Core](https://wowhead.com/item=187841)
 * [Protofruit Flesh](https://wowhead.com/item=190953)
@@ -68,6 +69,7 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 * [Geomental Lattice](https://wowhead.com/item=189146)
 * [Genesis Mote](https://wowhead.com/item=188957)
 * [Glimmer of Discovery](https://wowhead.com/item=189159)
+* [Glimmer of Multiplicity](https://wowhead.com/item=189164)
 * [Helicid Lattice](https://wowhead.com/item=189145)
 * [Lupine Lattice](https://wowhead.com/item=190388)
 * [Protoform Sentience Crown](https://wowhead.com/item=189176)
