@@ -40,6 +40,7 @@ local deepstar = {
 
 -- Keys & Key Fragments
 local keys = {
+    190197, -- Sandworm Chest Key
     190198, -- Sandworm Chest Key Fragment
     189863, -- Spatial Opener
 }
@@ -52,6 +53,7 @@ local lore = {
 -- Miscellaneous Items
 local miscellaneous = {
     190740, -- Automa Integration
+    190738, -- Bouncing Bufonids
     190339, -- Enlightened Offering
     187787, -- Ephemera Orb
     187728, -- Ephemera Strand
@@ -81,6 +83,7 @@ local protoform = {
     187635, -- Cervid Lattice
     189146, -- Geomental Lattice
     188957, -- Genesis Mote
+	189157, -- Glimmer of Animation
     189159, -- Glimmer of Discovery
 	189164, -- Glimmer of Multiplicity
     189145, -- Helicid Lattice

@@ -1,6 +1,6 @@
 # AdiBags - Zereth Mortis
 
-Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2.
+Adds a filter to [AdiBags](https://www.curseforge.com/wow/addons/adibags) for items from Zereth Mortis, the new zone added in 9.2.
 
 *If you would like to see an item added, please let me know [here](https://github.com/cr4ckp0t/AdiBags_ZerethMortis/issues).*
 
@@ -33,6 +33,7 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 
 ### Keys & Key Fragments
 
+* [Sandworm Chest Key](https://wowhead.com/item=190197)
 * [Sandworm Chest Key Fragment](https://wowhead.com/item=190198)
 * [Spatial Opener](https://wowhead.com/item=189863)
 
@@ -43,6 +44,7 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 ### Miscellaneous
 
 * [Automa Integration](https://wowhead.com/item=190740)
+* [Bouncing Bufonids](https://wowhead.com/item=190738)
 * [Enlightened Offering](https://wowhead.com/item=190339)
 * [Explosive Core](https://wowhead.com/item=187841)
 * [Protofruit Flesh](https://wowhead.com/item=190953)
@@ -68,6 +70,7 @@ Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2
 * [Cervid Lattice](https://wowhead.com/item=187635)
 * [Geomental Lattice](https://wowhead.com/item=189146)
 * [Genesis Mote](https://wowhead.com/item=188957)
+* [Glimmer of Animation](https://wowhead.com/item=189157)
 * [Glimmer of Discovery](https://wowhead.com/item=189159)
 * [Glimmer of Multiplicity](https://wowhead.com/item=189164)
 * [Helicid Lattice](https://wowhead.com/item=189145)
