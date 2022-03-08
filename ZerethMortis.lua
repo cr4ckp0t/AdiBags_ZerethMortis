@@ -76,31 +76,6 @@ local pocopoc = {
     190098, -- Pepepec
 }
 
--- Protoform Synthesis
-local protoform = {
-    187634, -- Ambystan Lattice
-    187633, -- Bufonid Lattice
-    187635, -- Cervid Lattice
-    189146, -- Geomental Lattice
-    188957, -- Genesis Mote
-	189157, -- Glimmer of Animation
-    189159, -- Glimmer of Discovery
-	189160, -- Glimmer of Focus
-	189164, -- Glimmer of Multiplicity
-	189167, -- Glimmer of Satisfaction
-    189145, -- Helicid Lattice
-    190388, -- Lupine Lattice
-    189176, -- Protoform Sentience Crown
-    189150, -- Raptora Lattice
-    189177, -- Revelation Key
-    189151, -- Scarabid Lattice
-    189152, -- Tarachnid Lattice
-    189153, -- Unformed Lattice
-    189154, -- Vespoid Lattice
-    189155, -- Viperid Lattice
-    189156, -- Vombata Lattice
-}
-
 -- Schematics
 local schematics = {
     189478, -- Schematic: Adorned Vombata
@@ -147,7 +122,6 @@ local function filterItemsInit(self)
     if self.db.profile.filterLore then addToFilter(items, lore) end
     if self.db.profile.filterMisc then addToFilter(items, miscellaneous) end
     if self.db.profile.filterPocopoc then addToFilter(items, pocopoc) end
-    if self.db.profile.filterProtoform then addToFilter(items, protoform) end
     if self.db.profile.filterSchematics then addToFilter(items, schematics) end
     if self.db.profile.filterToys then addToFilter(items, toys) end
 
@@ -167,15 +141,11 @@ local function tooltipInit()
     return tip
 end
 
-local shardFilter = AdiBags:RegisterFilter("Zereth Mortis", 98, "ABEvent-1.0")
-shardFilter.uiName = L["Zereth Mortis"]
-shardFilter.uiDesc = L["Items relating to Zereth Mortis and patch 9.2."]
+local zerethFilter = AdiBags:RegisterFilter("Zereth Mortis", 98, "ABEvent-1.0")
+zerethFilter.uiName = L["Zereth Mortis"]
+zerethFilter.uiDesc = L["Items relating to Zereth Mortis and patch 9.2."]
 
-local protoformFilter = AdiBags:RegisterFilter("Protoform Synthesis", 98, "ABEvent-1.0")
-protoformFilter.uiName = L["Protoform Synthesis"]
-protoformFilter.uiDesc = L["Items relating to Protoform Synthesis."]
-
-function shardFilter:OnInitialize()
+function zerethFilter:OnInitialize()
     self.db = AdiBags.db:RegisterNamespace("Zereth Mortis", {
         profile = {
             filterCrafting = true,
@@ -193,26 +163,15 @@ function shardFilter:OnInitialize()
     })
 end
 
-function protoformFilter:OnInitialize()
-    self.items = shardFilter.db.profile.filterProform and protoform or nil
-end
-
-function shardFilter:Update()
+function zerethFilter:Update()
     filterItems = nil
     self:SendMessage("AdiBags_FiltersChanged")
 end
 
-function protoformFilter:Update()
-    self.items = shardFilter.db.profile.filterProform and protoform or nil
-    self:SendMessage("AdiBags_FiltersChanged")
-end
+function zerethFilter:OnEnable() AdiBags:UpdateFilters() end
+function zerethFilter:OnDisable() AdiBags:UpdateFilters() end
 
-function shardFilter:OnEnable() AdiBags:UpdateFilters() end
-function shardFilter:OnDisable() AdiBags:UpdateFilters() end
-function protoformFilter:OnEnable() AdiBags:UpdateFilters() end
-function protoformFilter:OnDisable() Adibags:UpdateFilters() end
-
-function shardFilter:Filter(slotData)
+function zerethFilter:Filter(slotData)
     filterItems = filterItems or filterItemsInit(self)
     if filterItems[tonumber(slotData.itemId)] then
         return L["Zereth Mortis"]
@@ -231,25 +190,7 @@ function shardFilter:Filter(slotData)
     tooltip:Hide()
 end
 
-function protoformFilter:Filter(slotData)
-    if self.items[tonumber(slotData.itemId)] then
-        return L["Protoform Synthesis"]
-    end
-
-    tooltip = tooltip or tooltipInit()
-    tooltip:SetOwner(UIParent, "ANCHOR_NONE")
-    tooltip:ClearLines()
-
-    if slotData.bag == BANK_CONTAINER then
-        tooltip:SetInventoryItem("player", BankButtonIDToInvSlotID(slotData.slot, nil))
-    else
-        tooltip:SetBagItem(slotData.bag, slotData.slot)
-    end
-
-    tooltip:Hide()
-end
-
-function shardFilter:GetOptions()
+function zerethFilter:GetOptions()
     return {
         filterCrafting = {
             name = L["Crafting Materials"],
