@@ -63,7 +63,7 @@ function protoformFilter:Update()
 end
 
 function protoformFilter:OnEnable() AdiBags:UpdateFilters() end
-function protoformFilter:OnDisable() Adibags:UpdateFilters() end
+function protoformFilter:OnDisable() AdiBags:UpdateFilters() end
 
 function protoformFilter:Filter(slotData)
     if self.db.profile.filterProtoform and self.items[tonumber(slotData.itemId)] then
