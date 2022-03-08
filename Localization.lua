@@ -26,6 +26,7 @@ elseif locale == "enUS" then
 	L["Cosmetic Items"] = true
 	L["Crafting Materials"] = true
 	L["Deepstar Polyp Items"] = true
+	L["Items relating to Protoform Synthesis."] = true
 	L["Items relating to Zereth Mortis and patch 9.2."] = true
 	L["Items required for the Tales of the Exile achievement."] = true
 	L["Items required to craft the lure to get the Deepstar Polyp mount."] = true
@@ -39,8 +40,7 @@ elseif locale == "enUS" then
 	L["Schematics"] = true
 	L["Tales of the Exile"] = true
 	L["Toys"] = true
-	L["Zereth Mortis"] = true
-	
+	L["Zereth Mortis"] = true	
 elseif locale == "esES" then
 	--Translation missing
 elseif locale == "esMX" then

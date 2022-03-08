@@ -85,7 +85,9 @@ local protoform = {
     188957, -- Genesis Mote
 	189157, -- Glimmer of Animation
     189159, -- Glimmer of Discovery
+	189160, -- Glimmer of Focus
 	189164, -- Glimmer of Multiplicity
+	189167, -- Glimmer of Satisfaction
     189145, -- Helicid Lattice
     190388, -- Lupine Lattice
     189176, -- Protoform Sentience Crown
@@ -169,6 +171,10 @@ local shardFilter = AdiBags:RegisterFilter("Zereth Mortis", 98, "ABEvent-1.0")
 shardFilter.uiName = L["Zereth Mortis"]
 shardFilter.uiDesc = L["Items relating to Zereth Mortis and patch 9.2."]
 
+local protoformFilter = AdiBags:RegisterFilter("Protoform Synthesis", 98, "ABEvent-1.0")
+protoformFilter.uiName = L["Protoform Synthesis"]
+protoformFilter.uiDesc = L["Items relating to Protoform Synthesis."]
+
 function shardFilter:OnInitialize()
     self.db = AdiBags.db:RegisterNamespace("Zereth Mortis", {
         profile = {
@@ -187,23 +193,47 @@ function shardFilter:OnInitialize()
     })
 end
 
+function protoformFilter:OnInitialize()
+    self.items = shardFilter.db.profile.filterProform and protoform or nil
+end
+
 function shardFilter:Update()
     filterItems = nil
     self:SendMessage("AdiBags_FiltersChanged")
 end
 
-function shardFilter:OnEnable()
-    AdiBags:UpdateFilters()
+function protoformFilter:Update()
+    self.items = shardFilter.db.profile.filterProform and protoform or nil
+    self:SendMessage("AdiBags_FiltersChanged")
 end
 
-function shardFilter:OnDisable()
-    AdiBags:UpdateFilters()
-end
+function shardFilter:OnEnable() AdiBags:UpdateFilters() end
+function shardFilter:OnDisable() AdiBags:UpdateFilters() end
+function protoformFilter:OnEnable() AdiBags:UpdateFilters() end
+function protoformFilter:OnDisable() Adibags:UpdateFilters() end
 
 function shardFilter:Filter(slotData)
     filterItems = filterItems or filterItemsInit(self)
     if filterItems[tonumber(slotData.itemId)] then
         return L["Zereth Mortis"]
+    end
+
+    tooltip = tooltip or tooltipInit()
+    tooltip:SetOwner(UIParent, "ANCHOR_NONE")
+    tooltip:ClearLines()
+
+    if slotData.bag == BANK_CONTAINER then
+        tooltip:SetInventoryItem("player", BankButtonIDToInvSlotID(slotData.slot, nil))
+    else
+        tooltip:SetBagItem(slotData.bag, slotData.slot)
+    end
+
+    tooltip:Hide()
+end
+
+function protoformFilter:Filter(slotData)
+    if self.items[tonumber(slotData.itemId)] then
+        return L["Protoform Synthesis"]
     end
 
     tooltip = tooltip or tooltipInit()
