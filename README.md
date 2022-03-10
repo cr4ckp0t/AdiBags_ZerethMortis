@@ -31,6 +31,15 @@ Adds a filter to [AdiBags](https://www.curseforge.com/wow/addons/adibags) for it
 * [Flipper Fish](https://wowhead.com/item=187922)
 * [Pungent Blobfish](https://wowhead.com/item=187915)
 
+### Firim's Forge-tap
+
+* [Eidolic Particles](https://wowhead.com/item=187789)
+* [Ephemera Orb](https://wowhead.com/item=187787)
+* [Ephemera Strand](https://wowhead.com/item=187728)
+* [Firim's Spare Forge-tap](https://wowhead.com/item=187908)
+* [Kismetric Circlet](https://wowhead.com/item=187791)
+* [Trace Enigmet](https://wowhead.com/item=187790)
+
 ### Keys & Key Fragments
 
 * [Sandworm Chest Key](https://wowhead.com/item=190197)
@@ -65,27 +74,58 @@ Adds a filter to [AdiBags](https://www.curseforge.com/wow/addons/adibags) for it
 
 ### Protoform Synthesis
 
+#### Base Item
+
+* [Genesis Mote](https://wowhead.com/item=188957)
+
+#### Lattices
+
 * [Ambystan Lattice](https://wowhead.com/item=187634)
+* [Aurelid Lattice](https://wowhead.com/item=187636)
 * [Bufonid Lattice](https://wowhead.com/item=187633)
 * [Cervid Lattice](https://wowhead.com/item=187635)
 * [Geomental Lattice](https://wowhead.com/item=189146)
-* [Genesis Mote](https://wowhead.com/item=188957)
-* [Glimmer of Animation](https://wowhead.com/item=189157)
-* [Glimmer of Discovery](https://wowhead.com/item=189159)
-* [Glimmer of Focus](https://wowhead.com/item=189160)
-* [Glimmer of Multiplicity](https://wowhead.com/item=189164)
-* [Glimmer of Satisfaction](https://wowhead.com/item=189167)
 * [Helicid Lattice](https://wowhead.com/item=189145)
-* [Lupine Lattice](https://wowhead.com/item=190388)
-* [Protoform Sentience Crown](https://wowhead.com/item=189176)
+* [Leporid Lattice](https://wowhead.com/item=189147)
+* [Lupine Lattice](https://wowhead.com/item=189388)
+* [Poultrid Lattice](https://wowhead.com/item=189148)
+* [Proto Avian Lattice](https://wowhead.com/item=189149)
 * [Raptora Lattice](https://wowhead.com/item=189150)
-* [Revelation Key](https://wowhead.com/item=189177)
 * [Scarabid Lattice](https://wowhead.com/item=189151)
 * [Tarachnid Lattice](https://wowhead.com/item=189152)
 * [Unformed Lattice](https://wowhead.com/item=189153)
 * [Vespoid Lattice](https://wowhead.com/item=189154)
 * [Viperid Lattice](https://wowhead.com/item=189155)
 * [Vombata Lattice](https://wowhead.com/item=189156)
+
+#### Glimmers (Battle Pet Items)
+
+* [Glimmer of Animation](https://wowhead.com/item=189157)
+* [Glimmer of Cunning](https://wowhead.com/item=189158)
+* [Glimmer of Discovery](https://wowhead.com/item=189159)
+* [Glimmer of Focus](https://wowhead.com/item=189160)
+* [Glimmer of Malice](https://wowhead.com/item=189161)
+* [Glimmer of Metamorphosis](https://wowhead.com/item=189162)
+* [Glimmer of Multiplicity](https://wowhead.com/item=189164)
+* [Glimmer of Predation](https://wowhead.com/item=189165)
+* [Glimmer of Renewal](https://wowhead.com/item=189166)
+* [Glimmer of Satisfaction](https://wowhead.com/item=189167)
+* [Glimmer of Serenity](https://wowhead.com/item=189168)
+* [Glimmer of Survival](https://wowhead.com/item=189169)
+* [Glimmer of Vigilance](https://wowhead.com/item=189170)
+
+#### Mount Crafting Items
+
+* [Bauble of Pure Innovation](https://wowhead.com/item=189171)
+* [Crystalized Echo of the First Song](https://wowhead.com/item=189172)
+* [Eternal Ragepearl](https://wowhead.com/item=189173)
+* [Lens of Focused Intention](https://wowhead.com/item=189174)
+* [Mawforged Bridle](https://wowhead.com/item=189175)
+* [Protoform Sentience Crown](https://wowhead.com/item=189176)
+* [Revelation Key](https://wowhead.com/item=189177)
+* [Tools of Incomprehensible Experimentation](https://wowhead.com/item=189178)
+* [Unalloyed Bronze Ingot](https://wowhead.com/item=189179)
+* [Wind's Infinite Call](https://wowhead.com/item=189180)
 
 ### Schematics
 

@@ -38,6 +38,16 @@ local deepstar = {
     187915, -- Pungent Blobfish
 }
 
+-- Firim's Forge-tap
+local firim = {
+    187789, -- Eidolic Particles
+    187787, -- Ephemera Orb
+    187728, -- Ephemera Strand
+    187908, -- Firim's Spare Forge-tap
+    187791, -- Kismetric Circlet
+    187790, -- Trace Enigmet
+}
+
 -- Keys & Key Fragments
 local keys = {
     190197, -- Sandworm Chest Key
@@ -55,8 +65,6 @@ local miscellaneous = {
     190740, -- Automa Integration
     190738, -- Bouncing Bufonids
     190339, -- Enlightened Offering
-    187787, -- Ephemera Orb
-    187728, -- Ephemera Strand
     187841, -- Explosive Core
     190953, -- Protofruit Flesh
     190739, -- Provis Wax
@@ -118,6 +126,7 @@ local function filterItemsInit(self)
     if self.db.profile.filterCosmetic then addToFilter(items, cosmetic) end
     if self.db.profile.filterDeepstar then addToFilter(items, deepstar) end
     if self.db.profile.filterExile then addToFilter(items, exile) end
+    if self.db.profile.filterFirim then addToFilter(items, firim) end
     if self.db.profile.filterKeys then addToFilter(items, keys) end
     if self.db.profile.filterLore then addToFilter(items, lore) end
     if self.db.profile.filterMisc then addToFilter(items, miscellaneous) end
@@ -152,6 +161,7 @@ function zerethFilter:OnInitialize()
             filterCosmetic = true,
             filterDeepstar = true,
             filterExile = true,
+            filterFirim = true,
             filterKeys = true,
             filterLore = true,
             filterMisc = true,
@@ -209,6 +219,11 @@ function zerethFilter:GetOptions()
             desc = L["Items required to craft the lure to get the Deepstar Polyp mount."],
             type = "toggle",
             order = 30,
+        },
+        filterFirim = {
+            name = L["Firim's Forge-tap"],
+            type = "toggle",
+            order = 31,
         },
         filterKeys = {
             name = L["Keys & Key Fragments"],

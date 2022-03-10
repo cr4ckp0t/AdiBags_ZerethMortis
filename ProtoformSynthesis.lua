@@ -27,27 +27,56 @@ local protoformFilter = AdiBags:RegisterFilter("Protoform Synthesis", 98, "ABEve
 protoformFilter.uiName = L["Protoform Synthesis"]
 protoformFilter.uiDesc = L["Items relating to Protoform Synthesis."]
 protoformFilter.items = {
+    -- From: https://www.wowhead.com/item=189175/mawforged-bridle#comments:id=5327838
+
+    -- Base Item
+    [188957] = true, -- Genesis Mote
+
+    -- Lattices
     [187634] = true, -- Ambystan Lattice
+    [187636] = true, -- Aurelid Lattice
     [187633] = true, -- Bufonid Lattice
     [187635] = true, -- Cervid Lattice
     [189146] = true, -- Geomental Lattice
-    [188957] = true, -- Genesis Mote
-    [189157] = true, -- Glimmer of Animation
-    [189159] = true, -- Glimmer of Discovery
-    [189160] = true, -- Glimmer of Focus
-    [189164] = true, -- Glimmer of Multiplicity
-    [189167] = true, -- Glimmer of Satisfaction
     [189145] = true, -- Helicid Lattice
-    [190388] = true, -- Lupine Lattice
-    [189176] = true, -- Protoform Sentience Crown
+    [189147] = true, -- Leporid Lattice
+    [189388] = true, -- Lupine Lattice
+    [189148] = true, -- Poultrid Lattice
+    [189149] = true, -- Proto Avian Lattice
     [189150] = true, -- Raptora Lattice
-    [189177] = true, -- Revelation Key
     [189151] = true, -- Scarabid Lattice
     [189152] = true, -- Tarachnid Lattice
     [189153] = true, -- Unformed Lattice
     [189154] = true, -- Vespoid Lattice
     [189155] = true, -- Viperid Lattice
     [189156] = true, -- Vombata Lattice
+
+    -- Glimmers (Battle Pet Items)
+    [189157] = true, -- Glimmer of Animation
+    [189158] = true, -- Glimmer of Cunning
+    [189159] = true, -- Glimmer of Discovery
+    [189160] = true, -- Glimmer of Focus
+    [189161] = true, -- Glimmer of Malice
+	[189162] = true, -- Glimmer of Metamorphosis
+    [189164] = true, -- Glimmer of Multiplicity
+    [189165] = true, -- Glimmer of Predation
+    [189166] = true, -- Glimmer of Renewal
+    [189167] = true, -- Glimmer of Satisfaction
+    [189168] = true, -- Glimmer of Serenity
+    [189169] = true, -- Glimmer of Survival
+    [189170] = true, -- Glimmer of Vigilance
+
+    -- Mount Crafting Items
+    [189171] = true, -- Bauble of Pure Innovation
+    [189172] = true, -- Crystalized Echo of the First Song
+	[189173] = true, -- Eternal Ragepearl
+    [189174] = true, -- Lens of Focused Intention
+    [189175] = true, -- Mawforged Bridle
+    [189176] = true, -- Protoform Sentience Crown
+    [189177] = true, -- Revelation Key
+    [189178] = true, -- Tools of Incomprehensible Experimentation
+    [189179] = true, -- Unalloyed Bronze Ingot
+    [189180] = true, -- Wind's Infinite Call
 }
 
 function protoformFilter:OnInitialize()
