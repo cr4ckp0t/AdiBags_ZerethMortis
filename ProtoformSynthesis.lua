@@ -58,6 +58,7 @@ protoformFilter.items = {
     [189160] = true, -- Glimmer of Focus
     [189161] = true, -- Glimmer of Malice
 	[189162] = true, -- Glimmer of Metamorphosis
+	[189163] = true, -- Glimmer of Motion
     [189164] = true, -- Glimmer of Multiplicity
     [189165] = true, -- Glimmer of Predation
     [189166] = true, -- Glimmer of Renewal
@@ -77,6 +78,46 @@ protoformFilter.items = {
     [189178] = true, -- Tools of Incomprehensible Experimentation
     [189179] = true, -- Unalloyed Bronze Ingot
     [189180] = true, -- Wind's Infinite Call
+
+    -- Schematics
+    [189478] = true, -- Schematic: Adorned Vombata
+    [189418] = true, -- Schematic: Ambystan Darter
+    [189462] = true, -- Schematic: Bronze Helicid
+    [189473] = true, -- Schematic: Bronzewing Vespoid
+    [189474] = true, -- Schematic: Buzz
+    [189476] = true, -- Schematic: Curious Crystalsniffer
+    [189477] = true, -- Schematic: Darkened Vombata
+    [189457] = true, -- Schematic: Deathrunner
+    [189458] = true, -- Schematic: Desertwing Hunter
+    [189434] = true, -- Schematic: Fierce Scarabid
+    [189475] = true, -- Schematic: Forged Spiteflyer
+    [189465] = true, -- Schematic: Genesis Crawler
+    [189468] = true, -- Schematic: Goldplate Bufonid
+    [189467] = true, -- Schematic: Ineffable Skitterer
+    [189444] = true, -- Schematic: Leaping Leporid
+    [189459] = true, -- Schematic: Mawdapted Raptora
+    [189445] = true, -- Schematic: Microlicid
+    [189435] = true, -- Schematic: Multichicken
+    [189440] = true, -- Schematic: Omnipotential Core
+    [189455] = true, -- Schematic: Pale Regal Cervid
+    [189470] = true, -- Schematic: Patient Bufonid
+    [189442] = true, -- Schematic: Prototickles
+    [189469] = true, -- Schematic: Prototype Leaper
+    [189460] = true, -- Schematic: Raptora Swooper
+    [189441] = true, -- Schematic: Resonant Echo
+    [189471] = true, -- Schematic: Russet Bufonid
+    [189464] = true, -- Schematic: Scarlet Helicid
+    [189461] = true, -- Schematic: Serenade
+    [189446] = true, -- Schematic: Shelly
+    [189437] = true, -- Schematic: Stabilized Geomental
+    [189456] = true, -- Schematic: Sundered Zerethsteed
+    [189466] = true, -- Schematic: Tarachnid Creeper
+    [189443] = true, -- Schematic: Terror Jelly
+    [189448] = true, -- Schematic: Tunneling Vombata
+    [189463] = true, -- Schematic: Unsuccessful Prototype Fleetpod
+    [189472] = true, -- Schematic: Vespoid Flutterer
+    [189436] = true, -- Schematic: Violent Poultrid
+    [189447] = true, -- Schematic: Viperid Menace
 }
 
 function protoformFilter:OnInitialize()

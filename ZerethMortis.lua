@@ -16,6 +16,7 @@ local filterList = {}
 -- Crafting Items
 local crafting = {
     187703, -- Silken Protofiber
+	187879, -- Pollinated Extraction
     187707, -- Progenitor Essentia
     187704, -- Protoflesh
 	187893, -- Volatile Precursor
@@ -45,7 +46,9 @@ local firim = {
     187728, -- Ephemera Strand
     187908, -- Firim's Spare Forge-tap
     187791, -- Kismetric Circlet
+	190129, -- Serene Pigment
     187790, -- Trace Enigmet
+    187909, -- Unstable Containment Trap
 }
 
 -- Keys & Key Fragments

@@ -12,6 +12,7 @@ Adds a filter to [AdiBags](https://www.curseforge.com/wow/addons/adibags) for it
 
 * [Ephemera Strand](https://www.wowhead.com/item=187728)
 * [Silken Protofiber](https://wowhead.com/item=187703)
+* [Pollinated Extraction](https://wowhead.com/item=187879)
 * [Progenitor Essentia](https://wowhead.com/item=187707)
 * [Protoflesh](https://wowhead.com/item=187704)
 * [Volatile Precursor](https://wowhead.com/item=187893)
@@ -31,14 +32,16 @@ Adds a filter to [AdiBags](https://www.curseforge.com/wow/addons/adibags) for it
 * [Flipper Fish](https://wowhead.com/item=187922)
 * [Pungent Blobfish](https://wowhead.com/item=187915)
 
-### Firim's Forge-tap
+### Firim's Items
 
 * [Eidolic Particles](https://wowhead.com/item=187789)
 * [Ephemera Orb](https://wowhead.com/item=187787)
 * [Ephemera Strand](https://wowhead.com/item=187728)
 * [Firim's Spare Forge-tap](https://wowhead.com/item=187908)
 * [Kismetric Circlet](https://wowhead.com/item=187791)
+* [Serene Pigment](https://wowhead.com/item=190129)
 * [Trace Enigmet](https://wowhead.com/item=187790)
+* [Unstable Containment Trap](https://wowhead.com/item=187909)
 
 ### Keys & Key Fragments
 
@@ -106,6 +109,7 @@ Adds a filter to [AdiBags](https://www.curseforge.com/wow/addons/adibags) for it
 * [Glimmer of Focus](https://wowhead.com/item=189160)
 * [Glimmer of Malice](https://wowhead.com/item=189161)
 * [Glimmer of Metamorphosis](https://wowhead.com/item=189162)
+* [Glimmer of Motion](https://wowhead.com/item=189163)
 * [Glimmer of Multiplicity](https://wowhead.com/item=189164)
 * [Glimmer of Predation](https://wowhead.com/item=189165)
 * [Glimmer of Renewal](https://wowhead.com/item=189166)
@@ -127,12 +131,45 @@ Adds a filter to [AdiBags](https://www.curseforge.com/wow/addons/adibags) for it
 * [Unalloyed Bronze Ingot](https://wowhead.com/item=189179)
 * [Wind's Infinite Call](https://wowhead.com/item=189180)
 
-### Schematics
+#### Schematics
 
 * [Schematic: Adorned Vombata](https://wowhead.com/item=189478)
+* [Schematic: Ambystan Darter](https://wowhead.com/item=189418)
+* [Schematic: Bronze Helicid](https://wowhead.com/item=189462)
+* [Schematic: Bronzewing Vespoid](https://wowhead.com/item=189473)
+* [Schematic: Buzz](https://wowhead.com/item=189474)
+* [Schematic: Curious Crystalsniffer](https://wowhead.com/item=189476)
+* [Schematic: Darkened Vombata](https://wowhead.com/item=189477)
+* [Schematic: Deathrunner](https://wowhead.com/item=189457)
+* [Schematic: Desertwing Hunter](https://wowhead.com/item=189458)
+* [Schematic: Fierce Scarabid](https://wowhead.com/item=189434)
+* [Schematic: Forged Spiteflyer](https://wowhead.com/item=189475)
+* [Schematic: Genesis Crawler](https://wowhead.com/item=189465)
+* [Schematic: Goldplate Bufonid](https://wowhead.com/item=189468)
+* [Schematic: Ineffable Skitterer](https://wowhead.com/item=189467)
+* [Schematic: Leaping Leporid](https://wowhead.com/item=189444)
+* [Schematic: Mawdapted Raptora](https://wowhead.com/item=189459)
+* [Schematic: Microlicid](https://wowhead.com/item=189445)
 * [Schematic: Multichicken](https://wowhead.com/item=189435)
+* [Schematic: Omnipotential Core](https://wowhead.com/item=189440)
+* [Schematic: Pale Regal Cervid](https://wowhead.com/item=189455)
+* [Schematic: Patient Bufonid](https://wowhead.com/item=189470)
+* [Schematic: Prototickles](https://wowhead.com/item=189442)
 * [Schematic: Prototype Leaper](https://wowhead.com/item=189469)
+* [Schematic: Raptora Swooper](https://wowhead.com/item=189460)
+* [Schematic: Resonant Echo](https://wowhead.com/item=189441)
+* [Schematic: Russet Bufonid](https://wowhead.com/item=189471)
+* [Schematic: Scarlet Helicid](https://wowhead.com/item=189464)
+* [Schematic: Serenade](https://wowhead.com/item=189461)
+* [Schematic: Shelly](https://wowhead.com/item=189446)
+* [Schematic: Stabilized Geomental](https://wowhead.com/item=189437)
 * [Schematic: Sundered Zerethsteed](https://wowhead.com/item=189456)
+* [Schematic: Tarachnid Creeper](https://wowhead.com/item=189466)
+* [Schematic: Terror Jelly](https://wowhead.com/item=189443)
+* [Schematic: Tunneling Vombata](https://wowhead.com/item=189448)
+* [Schematic: Unsuccessful Prototype Fleetpod](https://wowhead.com/item=189463)
+* [Schematic: Vespoid Flutterer](https://wowhead.com/item=189472)
+* [Schematic: Violent Poultrid](https://wowhead.com/item=189436)
 * [Schematic: Viperid Menace](https://wowhead.com/item=189447)
 
 ### Toys
