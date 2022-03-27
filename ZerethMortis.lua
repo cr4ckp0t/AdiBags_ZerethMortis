@@ -20,6 +20,7 @@ local crafting = {
     187707, -- Progenitor Essentia
     187704, -- Protoflesh
 	187893, -- Volatile Precursor
+	190128, -- Wayward Essence
 }
 
 -- Cosmetic Items
@@ -68,11 +69,13 @@ local miscellaneous = {
     190740, -- Automa Integration
     190738, -- Bouncing Bufonids
     190339, -- Enlightened Offering
+	187867, -- Evolved Exo-mucus
     187841, -- Explosive Core
     190953, -- Protofruit Flesh
     190739, -- Provis Wax
     187662, -- Strange Goop
     190189, -- Sandworm Relic
+	187865, -- Spiked Protomesh
     190941, -- Teachings of the Elders
 }
 

@@ -16,6 +16,7 @@ Adds a filter to [AdiBags](https://www.curseforge.com/wow/addons/adibags) for it
 * [Progenitor Essentia](https://wowhead.com/item=187707)
 * [Protoflesh](https://wowhead.com/item=187704)
 * [Volatile Precursor](https://wowhead.com/item=187893)
+* [Wayward Essence](https://wowhead.com/item=190128)
 
 ### Cosmetic Transmog
 
@@ -58,11 +59,13 @@ Adds a filter to [AdiBags](https://www.curseforge.com/wow/addons/adibags) for it
 * [Automa Integration](https://wowhead.com/item=190740)
 * [Bouncing Bufonids](https://wowhead.com/item=190738)
 * [Enlightened Offering](https://wowhead.com/item=190339)
+* [Evolved Exo-mucus](https://wowhead.com/item=187867)
 * [Explosive Core](https://wowhead.com/item=187841)
 * [Protofruit Flesh](https://wowhead.com/item=190953)
 * [Provis Wax](https://wowhead.com/item=190739)
-* [Strange Goop](https://wowhead.com/item=187662)
 * [Sandworm Relic](https://wowhead.com/item=190189)
+* [Spiked Protomesh](https://wowhead.com/item=187865)
+* [Strange Goop](https://wowhead.com/item=187662)
 * [Teachings of the Elders](https://wowhead.com/item=190941)
 
 ### Pocopoc Attire
