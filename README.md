@@ -93,7 +93,7 @@ Adds a filter to [AdiBags](https://www.curseforge.com/wow/addons/adibags) for it
 * [Geomental Lattice](https://wowhead.com/item=189146)
 * [Helicid Lattice](https://wowhead.com/item=189145)
 * [Leporid Lattice](https://wowhead.com/item=189147)
-* [Lupine Lattice](https://wowhead.com/item=189388)
+* [Lupine Lattice](https://wowhead.com/item=190388)
 * [Poultrid Lattice](https://wowhead.com/item=189148)
 * [Proto Avian Lattice](https://wowhead.com/item=189149)
 * [Raptora Lattice](https://wowhead.com/item=189150)
