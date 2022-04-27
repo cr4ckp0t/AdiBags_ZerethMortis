@@ -21,6 +21,10 @@ local crafting = {
     187704, -- Protoflesh
 	187893, -- Volatile Precursor
 	190128, -- Wayward Essence
+    187699, -- First Flower
+    187701, -- Protogenic Pelt
+    187700, -- Progenium Ore
+    187702, -- Precursor Placoderm
 }
 
 -- Cosmetic Items

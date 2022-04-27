@@ -11,10 +11,14 @@ Adds a filter to [AdiBags](https://www.curseforge.com/wow/addons/adibags) for it
 ### Crafting Materials
 
 * [Ephemera Strand](https://www.wowhead.com/item=187728)
+* [First Flower](https://wowhead.com/item=187699)
 * [Silken Protofiber](https://wowhead.com/item=187703)
 * [Pollinated Extraction](https://wowhead.com/item=187879)
+* [Precursor Placoderm](https://wowhead.com/item=187702)
 * [Progenitor Essentia](https://wowhead.com/item=187707)
+* [Progenium Ore](https://wowhead.com/item=187700)
 * [Protoflesh](https://wowhead.com/item=187704)
+* [Protogenic Pelt](https://wowhead.com/item=187701)
 * [Volatile Precursor](https://wowhead.com/item=187893)
 * [Wayward Essence](https://wowhead.com/item=190128)
 
