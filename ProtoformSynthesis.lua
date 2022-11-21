@@ -140,7 +140,8 @@ function protoformFilter:Filter(slotData)
         return L["Protoform Synthesis"]
     end
 
-    tooltip = tooltip or tooltipInit()
+    --tooltip = tooltip or tooltipInit()
+    tooltip = GameTooltip
     tooltip:SetOwner(UIParent, "ANCHOR_NONE")
     tooltip:ClearLines()
 

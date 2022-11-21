@@ -197,7 +197,8 @@ function zerethFilter:Filter(slotData)
         return L["Zereth Mortis"]
     end
 
-    tooltip = tooltip or tooltipInit()
+    --tooltip = tooltip or tooltipInit()
+    tooltip = GameTooltip
     tooltip:SetOwner(UIParent, "ANCHOR_NONE")
     tooltip:ClearLines()
 
