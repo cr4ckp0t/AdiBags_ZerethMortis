@@ -8,7 +8,6 @@ local AdiBags = LibStub("AceAddon-3.0"):GetAddon("AdiBags")
 local tonumber = _G["tonumber"]
 
 local L = addon.L
-local tooltip
 local filterList = {}
 
 -- From: https://www.wowhead.com/guides/rare-spawn-treasure-locations-loot-zereth-mortis
@@ -147,19 +146,6 @@ local function filterItemsInit(self)
     return items
 end
 
-local function tooltipInit()
-    local tip, leftside = CreateFrame("GameTooltip"), {}
-    for i = 1, 6 do
-        local left, right = tip:CreateFontString(), tip:CreateFontString()
-        left:SetFontObject(GameFontNormal)
-        right:SetFontObject(GameFontNormal)
-        tip:AddFontStrings(left, right)
-        leftside[i] = left
-    end
-    tip.leftside = leftside
-    return tip
-end
-
 local zerethFilter = AdiBags:RegisterFilter("Zereth Mortis", 98, "ABEvent-1.0")
 zerethFilter.uiName = L["Zereth Mortis"]
 zerethFilter.uiDesc = L["Items relating to Zereth Mortis and patch 9.2."]
@@ -196,19 +182,6 @@ function zerethFilter:Filter(slotData)
     if filterItems[tonumber(slotData.itemId)] then
         return L["Zereth Mortis"]
     end
-
-    --tooltip = tooltip or tooltipInit()
-    tooltip = GameTooltip
-    tooltip:SetOwner(UIParent, "ANCHOR_NONE")
-    tooltip:ClearLines()
-
-    if slotData.bag == BANK_CONTAINER then
-        tooltip:SetInventoryItem("player", BankButtonIDToInvSlotID(slotData.slot, nil))
-    else
-        tooltip:SetBagItem(slotData.bag, slotData.slot)
-    end
-
-    tooltip:Hide()
 end
 
 function zerethFilter:GetOptions()
