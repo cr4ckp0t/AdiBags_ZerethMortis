@@ -46,7 +46,25 @@ elseif locale == "esES" then
 elseif locale == "esMX" then
 	--Translation missing
 elseif locale == "frFR" then
-	--Translation missing
+	L["Cosmetic (Transmogrification) items added in 9.2."] = "Objets cosmétiques (transmogrifications) ajoutés dans le Patch 9.2"
+	L["Cosmetic Items"] = "Objets cosmétiques"
+	L["Crafting Materials"] = "Matériaux d'artisanat"
+	L["Deepstar Polyp Items"] = "Objets pour le Polype stellaire"
+	L["Items relating to Protoform Synthesis."] = "Objets liés à la Synthèse de protoforme"
+	L["Items relating to Zereth Mortis and patch 9.2."] = "Objets liés à Zereth Mortis et au Patch 9.2"
+	L["Items required for the Tales of the Exile achievement."] = "Objets requis pour le haut fait Récits de l’exil"
+	L["Items required to craft the lure to get the Deepstar Polyp mount."] = "Objets requis pour confectionner l'hameçon pour la monture Polype stellaire des profondeurs"
+	L["Items used in crafting new items added in 9.2."] = "Objets utilisés pour l'artisanat du Patch 9.2"
+	L["Keys & Key Fragments"] = "Clés et fragments de clé"
+	L["Keys and key fragments added in 9.2."] = "Clés et fragments de clés aujoutés dans le Patch 9.2"
+	L["Lore Items"] = "Objets d'histoire"
+	L["Miscellaneous"] = "Divers"
+	L["Pocopoc Costumes"] = "Costumes de pocopoc"
+	L["Protoform Synthesis"] = "Synthèse de protoforme"
+	L["Schematics"] = "Schémas"
+	L["Tales of the Exile"] = "Récits de l’exil"
+	L["Toys"] = "Jouets"
+	L["Zereth Mortis"] = "Zereth Mortis"	
 elseif locale == "itIT" then
 	--Translation missing
 elseif locale == "koKR" then
