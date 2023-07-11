@@ -1,6 +1,6 @@
-## Interface: 100100
+## Interface: 100105
 ## Title: AdiBags - Zereth Mortis
-## Version: 1.3.3
+## Version: 1.3.4
 ## Author: Crackpot
 ## Notes: Adds a filter to AdiBags for items from Zereth Mortis, the new zone added in 9.2.
 ## X-Category: Bags & Inventory
@@ -9,5 +9,6 @@
 Localization.lua
 ZerethMortis.lua
 ProtoformSynthesis.lua
+
 
 
